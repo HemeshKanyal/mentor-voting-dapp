@@ -1,38 +1,148 @@
+/* Dark Ambient background */
+body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+  font-family: "Poppins", sans-serif;
+  color: #e5e7eb;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* App container with dark glassmorphism */
 .App {
+  max-width: 900px;
+  width: 95%;
+  padding: 30px;
+  border-radius: 20px;
+  background: rgba(20, 20, 35, 0.6);
+  backdrop-filter: blur(18px);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.6);
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Headings with neon gradient */
+h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  background: linear-gradient(to right, #00f5d4, #7b2ff7, #f72585);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 0 0 12px rgba(123, 47, 247, 0.6);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h2 {
+  margin-top: 25px;
+  font-size: 1.4rem;
+  color: #cbd5e1;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+/* Inputs and selects */
+input, select {
+  padding: 12px;
+  margin: 10px 6px;
+  border-radius: 12px;
+  border: none;
+  background: rgba(255, 255, 255, 0.08);
+  color: #f3f4f6;
+  width: calc(100% - 30px);
+  max-width: 400px;
+  font-size: 15px;
+  outline: none;
+  transition: 0.3s;
+}
+
+input:focus, select:focus {
+  box-shadow: 0 0 10px rgba(0, 245, 212, 0.7);
+}
+
+/* Buttons with neon glow */
+button {
+  padding: 12px 20px;
+  margin: 10px 6px;
+  border: none;
+  border-radius: 14px;
+  font-size: 15px;
+  cursor: pointer;
+  background: linear-gradient(135deg, #7b2ff7, #00f5d4);
   color: white;
+  font-weight: 500;
+  transition: 0.3s ease-in-out;
 }
 
-.App-link {
-  color: #61dafb;
+button:hover {
+  box-shadow: 0 0 18px rgba(0, 245, 212, 0.8),
+              0 0 25px rgba(123, 47, 247, 0.8);
+  transform: translateY(-2px);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+button:disabled {
+  background: rgba(107, 114, 128, 0.5);
+  cursor: not-allowed;
+  box-shadow: none;
+}
+
+/* Poll Card with neon dark glass */
+.poll-card {
+  margin-top: 25px;
+  padding: 20px;
+  border-radius: 18px;
+  background: rgba(30, 30, 45, 0.6);
+  backdrop-filter: blur(14px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.6);
+  text-align: left;
+  color: #e2e8f0;
+}
+
+.poll-card h3 {
+  margin-bottom: 10px;
+  font-size: 1.3rem;
+  color: #f8fafc;
+  text-shadow: 0 0 8px rgba(255, 255, 255, 0.25);
+}
+
+.poll-card ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 10px 0;
+}
+
+.poll-card li {
+  margin: 10px 0;
+  padding: 12px 14px;
+  background: rgba(255, 255, 255, 0.07);
+  border-radius: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.poll-card li button {
+  font-size: 14px;
+  padding: 8px 14px;
+}
+
+/* Poll status with neon glow */
+.poll-status {
+  margin: 12px 0;
+  font-weight: bold;
+}
+
+.poll-active {
+  color: #22c55e;
+  text-shadow: 0 0 10px rgba(34, 197, 94, 0.9);
+}
+
+.poll-closed {
+  color: #ef4444;
+  text-shadow: 0 0 10px rgba(239, 68, 68, 0.9);
+}
+
+/* Share link styling */
+input[readonly] {
+  background: rgba(255, 255, 255, 0.1);
+  cursor: not-allowed;
+  color: #94a3b8;
 }
