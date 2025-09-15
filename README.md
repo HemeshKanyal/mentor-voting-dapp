@@ -21,6 +21,12 @@ A decentralized voting application built with **React + Ethers.js** that allows 
 
 ---
 
+## 🌐 Live Demo
+
+👉 [Mentor Voting DApp](https://mentor-voting-dapp.vercel.app/)  
+
+---
+
 ## 🛠️ Tech Stack
 
 - **Frontend:** React, Ethers.js  
@@ -33,6 +39,40 @@ A decentralized voting application built with **React + Ethers.js** that allows 
 ## 🚀 Getting Started
 
 ### 1. Clone the repository
-```bash
-git clone https://github.com/HemeshKanyal/mentor-voting-dapp.git
-cd MENTOR-VOTING-DAPP
+<git clone https://github.com/HemeshKanyal/mentor-voting-dapp.git>
+<cd MENTOR-VOTING-DAPP>
+
+##  Install dependencies
+
+<npm install>
+
+## Run the development server
+<npm start>
+
+The app will be available at http://localhost:3000
+
+Smart Contract Details
+
+Contract Address: 0x85CbbaF6AC0A7565540f7aF9082e419816689C00
+
+Key Functions:
+
+createPoll(string, string[], uint256, uint8, uint256)
+
+vote(uint256, uint256)
+
+getPoll(uint256)
+
+getWinner(uint256)
+
+pollCount()
+
+## UI Preview
+
+The DApp uses a glassmorphism + ambient gradient theme for a smooth modern interface.
+
+![App Screenshot](Screenshot.png)
+
+## License
+
+This project is licensed under the MIT License.
